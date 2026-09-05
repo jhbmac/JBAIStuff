@@ -13,17 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JBAIStuff — Jeff Brown",
+  title: "Jeff Brown — Systems Programmer & Software QA Specialist",
   description:
-    "Projects, experiments, and tools by Jeff Brown — building useful things with AI.",
+    "Systems programmer, developer, systems engineer, and software QA specialist with over 25 years of experience across mainframe, Unix, and web platforms.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                try {
+                  var stored = localStorage.getItem("theme");
+                  var dark = stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+                  document.documentElement.classList.toggle("dark", dark);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

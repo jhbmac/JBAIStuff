@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JBAIStuff — Jeff Brown Resume Website
+
+A single-page personal resume website for **Jeff Brown**, built with Next.js (App Router), TypeScript, and Tailwind CSS. Deployed on Vercel.
+
+## Live URL
+
+https://jbaistuff.vercel.app
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm run start` — start the production server
+- `npm run lint` — ESLint
 
-## Learn More
+## Tech
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 16 (App Router) with TypeScript
+- Tailwind CSS v4
+- Static/server-rendered, no client-side data fetching
+- Light/dark theme toggle that respects system preference on first load
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Privacy note
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The residential/postal address (P. O. Box 72 / 107 East North Street, Muncie, IL 61857) and phone number (919-475-6668) from the resume are intentionally omitted from this public site, per the project requirements. City/state and the resume email were retained because they are safe to publish.
 
-## Deploy on Vercel
+## Deliberately skipped
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Contact form (out of scope for phase 1, per PRD)
+- Analytics / third-party tracking (out of scope)
+- Multi-page routes, CMS, auth, PDF generation (out of scope)
+- LinkedIn link in the header (the profile was behind an auth wall and not verifiable at build time)
