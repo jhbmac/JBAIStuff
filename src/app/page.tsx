@@ -32,6 +32,30 @@ export default function Home() {
                 </a>
               </p>
             ) : null}
+            {profile.links ? (
+              <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                {profile.links.linkedin ? (
+                  <a
+                    href={profile.links.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-600 underline-offset-4 hover:underline dark:text-sky-400"
+                  >
+                    LinkedIn
+                  </a>
+                ) : null}
+                {profile.links.github ? (
+                  <a
+                    href={profile.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-600 underline-offset-4 hover:underline dark:text-sky-400"
+                  >
+                    GitHub
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
           </div>
           <ThemeToggle />
         </div>

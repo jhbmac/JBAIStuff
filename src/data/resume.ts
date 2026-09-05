@@ -12,6 +12,11 @@ export const profile = {
   title:
     "Systems Programmer · Developer · Systems Engineer · Software QA Specialist",
   email: "jhbmac@pobox.com",
+  emailLabel: "jhbmac@pobox.com",
+  links: {
+    linkedin: "https://www.linkedin.com/in/jeff-brown-959a74b",
+    github: "https://github.com/jhbmac",
+  },
 };
 
 export const summary =
