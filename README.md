@@ -4,7 +4,7 @@ A single-page personal resume website for **Jeff Brown**, built with Next.js (Ap
 
 ## Live URL
 
-https://jbaistuff.vercel.app
+https://jbai-stuff.vercel.app
 
 ## Getting Started
 
@@ -38,4 +38,4 @@ The residential/postal address (P. O. Box 72 / 107 East North Street, Muncie, IL
 - Contact form (out of scope for phase 1, per PRD)
 - Analytics / third-party tracking (out of scope)
 - Multi-page routes, CMS, auth, PDF generation (out of scope)
-- LinkedIn link in the header (the profile was behind an auth wall and not verifiable at build time)
+- LinkedIn link in the header (the profile URL was provided by the attendee and linked; it is not on the resume as content)
